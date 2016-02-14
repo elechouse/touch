@@ -31,7 +31,7 @@ public:
 	uint8_t wr(uint8_t dat);
 private:
 	uint32_t _cs, _dclk, _din, _dout, _irq;
-	Pio* _cs_port, *_dclk_port, *_din_port, *_dout_port, *_irq_port;
+	gpio_dev* _cs_port, *_dclk_port, *_din_port, *_dout_port, *_irq_port;
 	uint32_t _cs_pin, _dclk_pin, _din_pin, _dout_pin, _irq_pin;
 };
 
